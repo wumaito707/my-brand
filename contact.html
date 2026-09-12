@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - Adewole Adewumi</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #111;
+            color: #d4af37;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 18px;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background-color: #d4af37;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #cccccc;
+        }
+
+        h2 {
+            color: #b08d20;
+            font-size: 28px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #d4af37;
+            outline: none;
+        }
+
+        fieldset {
+            margin: 20px 0;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        fieldset input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        fieldset label {
+            font-weight: normal;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #111;
+            color: #d4af37;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d4af37;
+            color: #111;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #d4af37;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <article>
+            <section>
+
+                <h2>Get In Touch</h2>
+
+                <form action="/submit" method="POST">
+
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            placeholder="Enter your full name"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="subject">Subject:</label><br>
+
+                        <select
+                            name="subject"
+                            id="subject"
+                            required>
+
+                            <option value="">--Choose--</option>
+                            <option value="web-development">
+                                Web Development
+                            </option>
+                            <option value="project">
+                                Project Discussion
+                            </option>
+                            <option value="business">
+                                Business
+                            </option>
+                            <option value="general">
+                                General Enquiry
+                            </option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+
+                        <textarea
+                            name="message"
+                            id="message"
+                            rows="6"
+                            cols="40"
+                            placeholder="Write your message here"
+                            required></textarea>
+                    </p>
+
+                    <fieldset>
+                        <legend>Urgency</legend>
+
+                        <input
+                            type="radio"
+                            name="urgency"
+                            id="low"
+                            value="low"
+                            checked>
+
+                        <label for="low">Low</label>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="urgency"
+                            id="medium"
+                            value="medium">
+
+                        <label for="medium">Medium</label>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="urgency"
+                            id="high"
+                            value="high">
+
+                        <label for="high">High</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Interests</legend>
+
+                        <input
+                            type="checkbox"
+                            name="interests"
+                            id="web"
+                            value="web-development">
+
+                        <label for="web">Web Development</label>
+
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            name="interests"
+                            id="programming"
+                            value="programming">
+
+                        <label for="programming">Programming</label>
+
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            name="interests"
+                            id="technology"
+                            value="technology">
+
+                        <label for="technology">Technology</label>
+
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            name="interests"
+                            id="business"
+                            value="business">
+
+                        <label for="business">Business</label>
+                    </fieldset>
+
+                    <p>
+                        <label for="contact-date">
+                            Preferred Contact Date:
+                        </label><br>
+
+                        <input
+                            type="date"
+                            name="contact-date"
+                            id="contact-date">
+                    </p>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Adewole Adewumi. All rights reserved.</p>
+
+        <p>
+            Email:
+            <a href="mailto:adewoleadewumi61@gmail.com">
+                adewoleadewumi61@gmail.com
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
