@@ -13,6 +13,9 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -51,8 +54,11 @@
 
         main {
             max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
             margin: 40px auto;
             padding: 0 20px;
+            flex: 1;
         }
 
         article {
@@ -134,7 +140,6 @@
             background-color: #111;
             color: white;
             padding: 25px;
-            margin-top: 40px;
         }
 
         footer a {
@@ -164,7 +169,7 @@
 
                 <h2>Get In Touch</h2>
 
-                <form action="https://formspree.io/f/xbgjvjpr" method="POST" enctype="multipart/form-data">
+                <form action="/submit" method="POST">
 
                     <p>
                         <label for="fullname">Full Name:</label><br>
@@ -195,15 +200,19 @@
                             required>
 
                             <option value="">--Choose--</option>
+
                             <option value="web-development">
                                 Web Development
                             </option>
+
                             <option value="project">
                                 Project Discussion
                             </option>
+
                             <option value="business">
                                 Business
                             </option>
+
                             <option value="general">
                                 General Enquiry
                             </option>
@@ -254,6 +263,7 @@
                             value="high">
 
                         <label for="high">High</label>
+
                     </fieldset>
 
                     <fieldset>
@@ -296,6 +306,7 @@
                             value="business">
 
                         <label for="business">Business</label>
+
                     </fieldset>
 
                     <p>
@@ -320,7 +331,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Adewole Adewumi. All rights reserved.</p>
+        <p>
+            &copy; 2026 Adewole Adewumi. All rights reserved.
+        </p>
 
         <p>
             Email:
