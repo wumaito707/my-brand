@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,9 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -56,8 +60,11 @@
 
         main {
             max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
             margin: 40px auto;
             padding: 0 20px;
+            flex: 1;
         }
 
         article {
@@ -91,7 +98,6 @@
             background-color: #111;
             color: white;
             padding: 25px;
-            margin-top: 40px;
         }
 
         footer a {
@@ -103,7 +109,7 @@
 <body>
 
     <header>
-        <h1>Wumaito Gold Web Solutions </h1>
+        <h1>Wumaito Gold Web Solutions</h1>
         <p>Web Developer | Tech Enthusiast | Future Software Engineer</p>
     </header>
 
@@ -117,51 +123,62 @@
     <hr>
 
     <main>
+
         <article>
 
-            <h2>Welcome to My Website</h2>
+            <section>
 
-            <img src="images/profile.jpg"
-                 alt="Profile picture of Adewole Adewumi"
-                 width="300"
-                 height="300">
+                <h2>Welcome to My Website</h2>
 
-            <p>
-                Hello! My name is <strong>Adewole Adewumi</strong>.
-                I am a student and an aspiring web developer who enjoys
-                learning how technology works and building useful projects.
-            </p>
+                <img src="images/profile.jpg"
+                     alt="Profile picture of Adewole Adewumi"
+                     width="300"
+                     height="300">
 
-            <p>
-                I am currently developing my skills in web development,
-                programming, and computer science. My goal is to become
-                a successful developer and build
-                <em>creative and useful technology solutions</em>
-                that can help people and businesses.
-            </p>
+                <p>
+                    Hello! My name is <strong>Adewole Adewumi</strong>.
+                    I am a student and an aspiring web developer who enjoys
+                    learning how technology works and building useful projects.
+                </p>
 
-            <p>
-                One of the things I enjoy is learning about technology
-                and creating projects. You can learn more about
-                <a href="https://wumaito-gold-web-solution-3fg6.onrender.com" target="_blank">
-                    web standards
-                </a>
-                and HTML from the World Wide Web Consortium.
-            </p>
+                <p>
+                    I am currently developing my skills in web development,
+                    programming, and computer science. My goal is to become
+                    a successful developer and build
+                    <em>creative and useful technology solutions</em>
+                    that can help people and businesses.
+                </p>
+
+                <p>
+                    One of the things I enjoy is learning about technology
+                    and creating projects. You can learn more about
+                    <a href="https://www.w3.org/" target="_blank">
+                        web standards
+                    </a>
+                    and HTML from the World Wide Web Consortium.
+                </p>
+
+            </section>
 
         </article>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Adewole Adewumi. All rights reserved.</p>
 
-       <p>
+        <p>
+            &copy; 2026 Adewole Adewumi. All rights reserved.
+        </p>
+
+        <p>
             Email:
             <a href="mailto:adewoleadewumi61@gmail.com">
                 adewoleadewumi61@gmail.com
             </a>
         </p>
+
     </footer>
 
 </body>
+
 </html>
